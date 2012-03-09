@@ -22,16 +22,15 @@
 		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body  data-spy="scroll" >
 		<?php
 		print $this->element("header");
 		?>
 		<div class="container">
-			<h1><?php print $title_for_layout; ?></h1>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
-			
 			<footer class="footer">
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p>Amr Osama</p>
@@ -42,6 +41,9 @@
 		<!-- /container -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="<?php print $this->Webroot ?>/js/bootstrap.min.js"></script>
+		<script src="<?php print $this->webroot ?>/js/bootstrap.min.js"></script>
+		<script src="<?php print $this->webroot ?>/js/main.js"></script>
+		
+		
 	</body>
 </html>
