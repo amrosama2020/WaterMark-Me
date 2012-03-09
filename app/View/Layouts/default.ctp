@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title><?php echo $title_for_layout;?></title>
+		<title><?php echo $title_for_layout;?> - <?php print Configure::read("siteTitle"); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="author" content="Amr Osama">
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -24,32 +24,20 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	</head>
 	<body>
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-					<a class="brand" href="#">Project name</a>
-					<div class="nav-collapse">
-						<ul class="nav">
-							<li class="active">
-								<a href="#">Home</a>
-							</li>
-							<li>
-								<a href="#about">About</a>
-							</li>
-							<li>
-								<a href="#contact">Contact</a>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
-		</div>
+		<?php
+		print $this->element("header");
+		?>
 		<div class="container">
 			<h1><?php print $title_for_layout; ?></h1>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
-			<?php echo $this->element('sql_dump'); ?>
+			
+			<footer class="footer">
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>Amr Osama</p>
+				<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
+				<p>Powered by <a href="http://cakephp.org/"><img src='<?php print $this->webroot; ?>img/cake.power.gif' /></a> and <a href="http://twitter.github.com/bootstrap">Bootstrab CSS Framework</a></p>
+			</footer>
 		</div>
 		<!-- /container -->
 		<!-- Placed at the end of the document so the pages load faster -->
