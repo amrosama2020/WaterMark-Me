@@ -67,9 +67,12 @@ body {
 .noPicsUploaded{
 	background: url(../img/place_pic.png) no-repeat;
 	width: 131px;
-	height: 113px;
+	height: 38px;
 	opacity: 0.3;
 	margin: 0 auto;
+	text-align: center;
+	font-size: 13pt;
+	padding-top: 119px;
 }
 .downloadBtn{
 	text-align: center;

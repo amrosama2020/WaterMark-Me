@@ -4,43 +4,35 @@
 	<div class="subnav">
 		<ul class="nav nav-pills">
 			<li class="">
-				<a href="#upload">Upload Pictures</a>
+				<a href="#upload">1 - Upload Pictures</a>
 			</li>
 			<li class="">
-				<a href="#watermark">Watermark</a>
+				<a href="#watermark">2 - Watermark</a>
 			</li>
 			<li>
-				<a href="#download">Download!</a>
+				<a href="#download">3 - Download!</a>
 			</li>
 		</ul>
 	</div>
 </header>
 <section id='upload'>
 	<div class="page-header">
-		<h1>Upload Your Pictures</h1>
-	</div>
-	<div class='row'>
-		<div class="span5 fileSelector">
-			<input type='file' />
-		</div>
-		<div class="span1 divider">
-			|</br/>
-			OR<br/>|
-		</div>
-		<div class="span5 well dragTarget">
-			Drop'em Here
-		</div>
+		<h1>
+			1- Upload Your Pictures
+		</h1>
 	</div>
 	<div class='row'>
 		<div class="span11 well uploadedPictures">
-			<div class='noPicsUploaded'></div>
+			<div class='noPicsUploaded'>
+				Drop'em Here
+			</div>
 			
 		</div>
 	</div>
 </section>
 <section id='watermark'>
 	<div class="page-header">
-		<h1>Add watermark</h1>
+		<h1>2- Add watermark</h1>
 	</div>
 	<div class='row'>
 		<div class="span5">
@@ -51,7 +43,7 @@
 
 <section id='download'>
 	<div class="page-header">
-		<h1>Download</h1>
+		<h1>3- Download</h1>
 	</div>
 	<div class='row'>
 		<div class="span12 downloadBtn">
@@ -59,3 +51,4 @@
 		</div>
 	</div>
 </section>
+
