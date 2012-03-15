@@ -41,7 +41,10 @@ class WatermarkController extends AppController {
 	 * @return void
 	 */
 	public function index(){
-		
+		$this->set("js",array(
+				"watermark.js"
+			)
+		);
 		
 	}
 
