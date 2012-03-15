@@ -48,7 +48,6 @@
 		</div>
 	</div>
 </section>
-
 <section id='download'>
 	<div class="page-header">
 		<h1>Download</h1>
